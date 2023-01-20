@@ -1,0 +1,52 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="myparallax">
+        <div class="container at-3 ">
+            <p style="padding-top: 40px; color:aliceblue;font-size: 3em;text-align: left;">Rediscover Yourself with MyTravels</p>
+            <div class="row">
+                <div class="col-sm-0"></div>
+                <div class="col-sm-6">
+                    <p style="color:aliceblue;font-size: 1.25em;text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                <div class="container" style="float: left;">
+                    <img style="object-fit:cover;height:100px;float:left;"  src="{% static 'mriic/s3.png' %}">
+                </div>
+                    <p style="padding-bottom: 40px; color: aliceblue;font-size: 1.5em;text-align: left;">CEO My Travels</p>  
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+    <style>
+        .myparallax {
+          /* The image used */
+          background-image: url("{% static 'mriic/im6.jpg' %}");
+        
+          /* Set a specific height */
+          min-height: 400px;
+        
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        @media only screen and (max-device-width: 750px) {
+        .myparallax{
+            background-attachment: scroll;
+         }
+        }
+
+        </style>
+    
+</body>
+</html>
